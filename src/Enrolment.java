@@ -1,3 +1,4 @@
+// it represents a student's enrolment in a course
 import java.time.LocalDate;
 
 public class Enrolment {
@@ -5,6 +6,7 @@ public class Enrolment {
     private Course course;
     private LocalDate date;
 
+    //constructor
     public Enrolment(Student student, Course course, LocalDate date) {
         this.student = student;
         this.course = course;
@@ -14,6 +16,7 @@ public class Enrolment {
     public Student getStudent() { return student; }
     public Course getCourse() { return course; }
 
+    //display enrolment information.
     public void displayDetails() {
         System.out.println(student.getName() + " enrolled in " + course.getCode() + " on " + date);
     }
